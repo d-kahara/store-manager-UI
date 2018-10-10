@@ -3,6 +3,7 @@ body {
   flex-direction: column;
   min-height: 100vh;
 }
+
 /* ---------------Navbar----------------------------- */
 .Navbar {
   background-color: #3DCCC7;
@@ -44,4 +45,79 @@ body {
     position: absolute;
     cursor: pointer;
    } 
+}
+
+/* --------------Content-Area-Landing-Page------------------------- */
+.container {
+        display: flex;
+
+}
+.container div{
+    border: 1px #3DCCC7 solid;
+    padding: 10px;
+    
+}
+.box-1 {
+    flex: 2
+}
+.box-2 {
+    flex: 1;
+     display: flex;  
+    flex-direction: column;
+}
+#lead_text {
+    color: #ED7D3A;
+    font-family: 'Kodchasan', sans-serif;
+
+}
+
+/* -------------Making Image Responsive --------------------------------*/
+
+section {
+   display: flex;
+   justify-content: left;
+   flex-wrap: wrap;
+}
+.media { 
+    min-width: 0;
+    margin: 5px;
+}
+img {
+    width: 450px;
+    max-width: 100%; 
+    max-height: 550px; 
+}
+
+/* ----------------Login Form-------------------------------------------- */
+input[type=text], input[type=password] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    color: #ED7D3A
+}
+input[type=submit] {
+    background-color: #3DCCC7;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+}
+
+input[type=submit]:hover {
+    opacity: 0.8;
+}
+.user,.password,  {
+    color: #ED7D3A;
+}
+
+/* ---------------Footer--------------------- */
+footer {
+  margin: auto auto auto auto;
+  
+  display:flex;
 }
