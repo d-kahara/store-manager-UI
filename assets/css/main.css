@@ -3,3 +3,45 @@ body {
   flex-direction: column;
   min-height: 100vh;
 }
+/* ---------------Navbar----------------------------- */
+.Navbar {
+  background-color: #3DCCC7;
+  display: flex;
+  padding: 16px;
+  font-family: sans-serif;
+  color: white;
+}
+.Navbar-Link {
+  padding-right: 8px;
+}
+
+.Navbar-Items {
+  display: flex;
+}
+.Navbar-Items--right {
+  margin-left:auto;
+}
+.Navbar-Link-toggle {
+  display: none;
+}
+@media only screen and (max-width: 768px) {
+  .Navbar-Items,
+  .Navbar {
+    flex-direction: column;
+  }
+.Navbar-Items {
+    display:none;
+  }
+.Navbar-Items--right {
+    margin-left:0;
+  }
+.Navbar-ToggleShow {
+    display: flex;
+  }
+.Navbar-Link-toggle {
+    align-self: flex-end;
+    display: initial;
+    position: absolute;
+    cursor: pointer;
+   } 
+}
