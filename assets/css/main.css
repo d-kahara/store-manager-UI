@@ -121,3 +121,26 @@ footer {
   
   display:flex;
 }
+/* ==============Admin Dashboard====================== */
+.container-admin {
+    display: flex;
+    border: 1px #3DCCC7 solid;
+    padding: 10px;  
+
+}
+
+.dash-link {
+    color: #ED7D3A;    
+    margin: auto auto auto auto;
+    cursor: pointer;
+    
+}
+.center {
+    margin: 20px auto 20px auto;
+}
+
+.dash-link :hover {
+    opacity: 0.8;
+    cursor: pointer;
+    color: #3DCCC7;
+}
