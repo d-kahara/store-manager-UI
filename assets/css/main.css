@@ -195,3 +195,54 @@ table {
     width: 100%;
 }
 
+/* ==============Product Details=================== */
+.container-detail {
+    display: flex;
+}
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.4);
+  padding-left: 20px;
+  font-family: arial;
+  flex: 1
+  
+}
+
+
+
+.card button {
+  border: solid;
+  outline: 0;
+  padding: 12px;
+  color: white;
+  background-color: #3DCCC7;
+  cursor: pointer;
+  width: 100%;
+  font-size: 18px;
+  margin-right: 15px;
+}
+
+.card button:hover {
+  opacity: 0.7;
+}
+
+.card h5, p {
+    color: #ED7D3A;
+    font-family: 'Kodchasan', sans-serif;
+   
+}
+.card p {
+    color: #000;
+    font-weight: 20px;
+}
+.form-update {
+    flex:2;
+    padding-left: 20px;
+}
+.form-update h3 {
+    color: #ED7D3A;
+    font-family: 'Kodchasan', sans-serif;  
+}
+#delete {
+    background-color: red;
+}
