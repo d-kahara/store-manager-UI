@@ -121,6 +121,8 @@ footer {
   
   display:flex;
 }
+
+
 /* ==============Admin Dashboard====================== */
 .container-admin {
     display: flex;
@@ -144,6 +146,7 @@ footer {
     cursor: pointer;
     color: #3DCCC7;
 }
+
 /* =============product list============== */
 .container-products {
     display: flex;
@@ -207,9 +210,6 @@ table {
   flex: 1
   
 }
-
-
-
 .card button {
   border: solid;
   outline: 0;
@@ -245,4 +245,21 @@ table {
 }
 #delete {
     background-color: red;
+}
+/* ========new user===== */
+.card i {
+  color: #ED7D3A;
+  padding: 100px;
+
+}
+/* ==========cart========= */
+#btn-cart {
+    color: #ED7D3A;
+    font-family: 'Kodchasan', sans-serif;
+    text-align: center;
+    padding: 10px;
+    transition: all 0.5s;
+    cursor: pointer;
+    margin: 10px;
+    width: 35%; 
 }
