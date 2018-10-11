@@ -144,3 +144,54 @@ footer {
     cursor: pointer;
     color: #3DCCC7;
 }
+/* =============product list============== */
+.container-products {
+    display: flex;
+    border: 1px #3DCCC7 solid;
+    padding: 10px; 
+}
+th {
+    margin: auto auto auto auto;
+    padding: 10px;  
+    
+
+}
+.main-table {
+    padding: 10px;  
+   
+}
+.table-data {
+    
+    border: 1px #3DCCC7 solid;
+    padding: 5px;
+
+}
+tr:hover {
+  background: #ddd;
+}
+/* .hidden {
+    display: none;
+} */
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+#btn {
+    color: #ED7D3A;
+    font-family: 'Kodchasan', sans-serif;
+    text-align: center;
+    padding: 10px;
+    transition: all 0.5s;
+    cursor: pointer;
+    margin: 10px;
+}
+#input-box {
+    width: 250px;
+    transition: width 0.4s ease-in-out;
+}
+
+#input-box:focus {
+    width: 100%;
+}
+
