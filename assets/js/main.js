@@ -1,3 +1,4 @@
+// This function allows a user to toggle navbar links in mobile devices
 function classToggle() {
     const navs = document.querySelectorAll('.Navbar-Items')
 
