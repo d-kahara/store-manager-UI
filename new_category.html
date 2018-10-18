@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU"
         crossorigin="anonymous">
     <link rel="stylesheet" href="assets/css/main.css">
-    <title>Staff Details</title>
+    <title>New Product</title>
 </head>
 
 <body>
@@ -25,10 +25,10 @@
 
         <nav class="Navbar-Items Navbar-Items--right">
 
-            <div class="Navbar-Link">
-                <a id="lead_text" href="staff_list.html">Back to Staff List</a>
-            </div>
 
+            <div class="Navbar-Link">
+                <a id="lead_text" href="product_list.html">Back to Products</a>
+            </div>
             <div class="Navbar-Link">
                 <a id="lead_text" href="">Logout</a>
             </div>
@@ -39,26 +39,17 @@
 
     <div class="container-detail">
         <div class="card">
-            <i class="fas fa-user fa-10x"></i>
+            <i class="fas fa-store fa-10x"></i>
         </div>
         <div class="form-update">
-            <h3>New Attendant</h3>
+            <h3>New Category</h3>
 
             <form action="" method="post" class="form">
-                <div class="form-field">
-                    <label id="lead_text" for="Title"><span class="hidden">Attendant Name</span></label>
-                    <input id="Attendant_name" type="text" class="form-input" placeholder="Attendant Name" required>
-                </div>
 
                 <div class="form-field">
-                    <label id="lead_text" for="Department"><span class="hidden">Department</span></label>
-                    <input id="Department" type="text" class="form-input" placeholder="Department" required>
+                    <label id="lead_text" for="category"><span class="hidden">Category Name</span></label>
+                    <input id="category" type="password" class="form-input" placeholder="Create Category" required>
                 </div>
-                <div class="form-field">
-                    <label id="lead_text" for="is_admin"><span class="hidden">Grant Admin privileges</span></label>
-                    <input id="is_admin" type="text" class="form-input" placeholder="True" required>
-                </div>
-
 
                 <div class="form-field">
                     <input type="submit" value="Submit">

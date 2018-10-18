@@ -26,11 +26,10 @@
         <nav class="Navbar-Items Navbar-Items--right">
 
             <div class="Navbar-Link">
-                <a id="lead_text" href="staff_list.html">Back to Staff List</a>
+                <a id="lead_text" href="staff_list.html">Back To Staff List</a>
             </div>
-
             <div class="Navbar-Link">
-                <a id="lead_text" href="">Logout</a>
+                <a id="lead_text" href="index.html">Logout</a>
             </div>
         </nav>
     </div>
@@ -39,10 +38,23 @@
 
     <div class="container-detail">
         <div class="card">
-            <i class="fas fa-user fa-10x"></i>
+            <h5>Attendant Name</h5>
+            <p class="card-title">Elvis Presley</p>
+
+            <h5>Date Added</h5>
+            <p class="date-added">11-Oct-2018</p>
+            <h5>Date Modified</h5>
+            <p class="date-modified">13-Oct-2018</p>
+            <h5>Department</h5>
+            <p class="Department">Sales</p>
+            <h5>Attendant ID</h5>
+            <p class="att_id">12</p>
+            
+            <Button id="delete">Delete</Button>
+
         </div>
         <div class="form-update">
-            <h3>New Attendant</h3>
+            <h3>Update Details</h3>
 
             <form action="" method="post" class="form">
                 <div class="form-field">
@@ -51,13 +63,10 @@
                 </div>
 
                 <div class="form-field">
-                    <label id="lead_text" for="Department"><span class="hidden">Department</span></label>
-                    <input id="Department" type="text" class="form-input" placeholder="Department" required>
+                    <label id="lead_text" for="Minimum_stock"><span class="hidden">Department</span></label>
+                    <input id="Minimum_stock" type="text" class="form-input" placeholder="Department" required>
                 </div>
-                <div class="form-field">
-                    <label id="lead_text" for="is_admin"><span class="hidden">Grant Admin privileges</span></label>
-                    <input id="is_admin" type="text" class="form-input" placeholder="True" required>
-                </div>
+
 
 
                 <div class="form-field">
@@ -76,7 +85,7 @@
 
 
 
-    <script src="assets/js/main.js"></script>
+    <script src="main.js"></script>
 </body>
 
 </html>

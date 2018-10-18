@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU"
         crossorigin="anonymous">
     <link rel="stylesheet" href="assets/css/main.css">
-    <title>Staff List </title>
+    <title>Cart </title>
 </head>
 
 <body>
@@ -24,22 +24,24 @@
         </div>
 
         <nav class="Navbar-Items Navbar-Items--right">
-            <div class="Navbar-Link">
-                <a id="lead_text" href="admin_dash.html">Back to Dashboard</a>
-            </div>
 
             <div class="Navbar-Link">
-                <a id="lead_text" href="">Logout</a>
+                <a id="lead_text" href="attendant_products_view.html">Back To Products</a>
+            </div>
+            <div class="Navbar-Link">
+                <a id="lead_text" href="attendant_dash.html">Dashboard</a>
+            </div>
+            <div class="Navbar-Link">
+                <a id="lead_text" href="index.html">Logout</a>
             </div>
         </nav>
     </div>
 
-    <h3 id="lead_text" class="center">Store Attendants </h3>
+    <h3 id="lead_text" class="center">Cart</h3>
 
-    <div class="container-products"
+    <div class="container-products">
 
-        <a href="new_attendant.html"><button class="add-product hidden" id="btn">Add Staff</button></a>
-        <input id="input-box" type="text" name="search" placeholder="Search For Attendants..">
+        <input id="input-box" type="text" name="search" placeholder="Search Cart..">
 
 
     </div>
@@ -50,30 +52,43 @@
     <div class="container-products">
         <table class="main-table">
             <tr>
-                <th class="dash-link">Name</th>
+                <th class="dash-link">Item</th>
+
+                <th class="dash-link">Price</th>
+                
 
 
             </tr>
             <tr>
-                <td class="staff_name table-data">Elvis Presley</td>
+                <td class="item_data table-data">Flour</td>
 
+                <td class="Price_data table-data">Ksh.75</td>
 
-                <td><a href="staff_details.html"><button id="btn">View Details</button></a></td>
 
             <tr>
-                <td class="item_data table-data">Prince</td>
+                <td class="item_data table-data">Television</td>
 
-                <td><a href="staff_details.html"><button id="btn">View Details</button></a></td>
+                <td class="Price_data table-data">Ksh.17,500 </td>
+
             </tr>
             <tr>
-                <td class="item_data table-data">Michael Jackson</td>
+                <td class="item_data table-data">Blue Band</td>
+ 
+                <td class="Price_data table-data">Ksh.45</td>
+                
 
 
-                <td><a href="staff_details.html"><button id="btn">View Details</button></a></td>
             </tr>
+        </table>
+            
+            
     </div>
 
-    <script src="assets/js/main.js"></script>
+    <hr>
+    <h3 id="lead_text">TOTAL = Ksh.17,620</h3>
+    <button id="btn-cart">Checkout</button>
+
+    <script src="main.js"></script>
 </body>
 
 </html>

@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU"
         crossorigin="anonymous">
     <link rel="stylesheet" href="assets/css/main.css">
-    <title>Staff List </title>
+    <title>Sales-Attendant </title>
 </head>
 
 <body>
@@ -24,22 +24,21 @@
         </div>
 
         <nav class="Navbar-Items Navbar-Items--right">
-            <div class="Navbar-Link">
-                <a id="lead_text" href="admin_dash.html">Back to Dashboard</a>
-            </div>
 
+            <div class="Navbar-Link">
+                <a id="lead_text" href="attendant_dash.html">Back to Dashboard</a>
+            </div>
             <div class="Navbar-Link">
                 <a id="lead_text" href="">Logout</a>
             </div>
         </nav>
     </div>
 
-    <h3 id="lead_text" class="center">Store Attendants </h3>
+    <h3 id="lead_text" class="center">Sales Records for Prince</h3>
 
-    <div class="container-products"
+    <div class="container-products">
 
-        <a href="new_attendant.html"><button class="add-product hidden" id="btn">Add Staff</button></a>
-        <input id="input-box" type="text" name="search" placeholder="Search For Attendants..">
+        <input id="input-box" type="text" name="search" placeholder="Search records..">
 
 
     </div>
@@ -50,26 +49,30 @@
     <div class="container-products">
         <table class="main-table">
             <tr>
-                <th class="dash-link">Name</th>
-
+                <th class="dash-link">Attendant Name</th>
+                <th class="dash-link">Products Sold</th>
+                <th class="dash-link">Date Sold</th>
+                <th class="dash-link">Sales Worth</th>
 
             </tr>
             <tr>
-                <td class="staff_name table-data">Elvis Presley</td>
-
-
-                <td><a href="staff_details.html"><button id="btn">View Details</button></a></td>
+                <td class="item_data table-data">Prince</td>
+                <td class="stock_data table-data">12</td>
+                <td class="Minimum_stock_data table-data">1-Oct-2018</td>
+                <td class="Price_data table-data">Ksh.75,025</td>
+            </tr>
 
             <tr>
                 <td class="item_data table-data">Prince</td>
-
-                <td><a href="staff_details.html"><button id="btn">View Details</button></a></td>
+                <td class="stock_data table-data">3</td>
+                <td class="Minimum_stock_data table-data">4-Oct-2018</td>
+                <td class="Price_data table-data">Ksh.7,245</td>
             </tr>
             <tr>
-                <td class="item_data table-data">Michael Jackson</td>
-
-
-                <td><a href="staff_details.html"><button id="btn">View Details</button></a></td>
+                <td class="item_data table-data">Prince</td>
+                <td class="stock_data table-data">50</td>
+                <td class="Minimum_stock_data table-data">8-Oct-2018</td>
+                <td class="Price_data table-data">Ksh.175,025</td>
             </tr>
     </div>
 
