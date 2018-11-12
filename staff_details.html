@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta role="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link href="https://fonts.googleapis.com/css?family=Armata" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Kodchasan" rel="stylesheet">
@@ -27,47 +27,40 @@
 
             <div class="Navbar-Link">
                 <a id="lead_text" href="staff_list.html">Back To Staff List</a>
-            </div>
-            <div class="Navbar-Link">
-                <a id="lead_text" href="index.html">Logout</a>
-            </div>
+
         </nav>
     </div>
 
-
+    <div class="container2">
+        <div id="output">
+            <!-- Dialog Box -->
+        </div>
+    </div>
 
     <div class="container-detail">
         <div class="card">
-            <h5>Attendant Name</h5>
-            <p class="card-title">Elvis Presley</p>
+            <h5>User Email</h5>
+            <p id="card-title">Elvis@Presley.com</p>
 
             <h5>Date Added</h5>
-            <p class="date-added">11-Oct-2018</p>
-            <h5>Date Modified</h5>
-            <p class="date-modified">13-Oct-2018</p>
-            <h5>Department</h5>
-            <p class="Department">Sales</p>
-            <h5>Attendant ID</h5>
-            <p class="att_id">12</p>
+            <p id="date-added">11-Oct-2018</p>
+
+            <h5>User Role</h5>
+            <p id="role">attendant</p>
+            <h5>User ID</h5>
+            <p id="user_id">12</p>
             
-            <Button id="delete">Delete</Button>
+            
 
         </div>
         <div class="form-update">
             <h3>Update Details</h3>
 
-            <form action="" method="post" class="form">
+            <form id="user-update" class="form">
                 <div class="form-field">
-                    <label id="lead_text" for="Title"><span class="hidden">Attendant Name</span></label>
-                    <input id="Attendant_name" type="text" class="form-input" placeholder="Attendant Name" required>
+                    <label id="lead_text" for="Title"><span class="hidden">User role</span></label>
+                    <input id="User_role" type="text" class="form-input" placeholder="User role" required>
                 </div>
-
-                <div class="form-field">
-                    <label id="lead_text" for="Minimum_stock"><span class="hidden">Department</span></label>
-                    <input id="Minimum_stock" type="text" class="form-input" placeholder="Department" required>
-                </div>
-
-
 
                 <div class="form-field">
                     <input type="submit" value="Submit">
@@ -77,15 +70,8 @@
 
     </div>
 
-
-
-
-
-
-
-
-
-    <script src="main.js"></script>
+    <script src="assets/js/main.js"></script>
+    <script src="assets/js/userUpdate.js"></script>
 </body>
 
 </html>

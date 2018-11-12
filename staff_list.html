@@ -28,50 +28,36 @@
                 <a id="lead_text" href="admin_dash.html">Back to Dashboard</a>
             </div>
 
-            <div class="Navbar-Link">
-                <a id="lead_text" href="">Logout</a>
-            </div>
+
         </nav>
     </div>
-
-    <h3 id="lead_text" class="center">Store Attendants </h3>
+<div class="container2">
+    <div id="output">
+        <!-- Dialog Box -->
+    </div>
+</div>
+    <h3 id="lead_text" class="center">Company Staff List </h3>
 
     <div class="container-products">
         <a href="new_attendant.html"><button class="add-product hidden" id="btn">Add Staff</button></a>
-        <input id="input-box" type="text" name="search" placeholder="Search For Attendants..">
-
 
     </div>
-
-
-
-
     <div class="container-products">
         <table class="main-table">
-            <tr>
-                <th class="dash-link">Name</th>
-
-
-            </tr>
-            <tr>
-                <td class="staff_name table-data">Elvis Presley</td>
-
-                <td><a href="staff_details.html"><button id="btn">View Details</button></a></td>
-
-            <tr>
-                <td class="item_data table-data">Prince</td>
-
-
-                <td><a href="staff_details.html"><button id="btn">View Details</button></a></td>
-            </tr>
-            <tr>
-                <td class="item_data table-data">Michael Jackson</td>
-
-                <td><a href="staff_details.html"><button id="btn">View Details</button></a></td>
-            </tr>
+            <tbody id="users">   
+                <tr>
+                    <th class="dash-link">User Id</th>
+                    <th class="dash-link">Email</th>
+                    <th class="dash-link">Date Registered</th>
+                </tr>   
+            </tbody>
+        </table>
     </div>
-
+ 
     <script src="assets/js/main.js"></script>
+    <script src="assets/js/users.js"></script>
+
+
 </body>
 
 </html>

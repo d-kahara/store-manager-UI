@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU"
         crossorigin="anonymous">
     <link rel="stylesheet" href="assets/css/main.css">
-    <title>Sales-Admin </title>
+    <title>Sales-Attendant </title>
 </head>
 
 <body>
@@ -26,13 +26,18 @@
         <nav class="Navbar-Items Navbar-Items--right">
 
             <div class="Navbar-Link">
-                <a id="lead_text" href="admin_dash.html">Back To Dashboard</a>
+                <a id="lead_text" href="admin_sale_records.html">Back to Sales</a>
             </div>
 
         </nav>
     </div>
-
-    <h3 id="lead_text" class="center">Sales Records</h3>
+    <div class="container2">
+        <div id="output">
+            <!-- Dialog Box -->
+        </div>
+    </div>
+    <h3 id="lead_text" class="center">Sales Records for <p id="email"></p>
+    </h3>
 
     <div class="container-products">
 
@@ -48,19 +53,19 @@
         <table class="main-table">
             <tbody id="sales">
                 <tr>
-                    <th class="dash-link">User Email</th>
-                    <th class="dash-link">Products Sold</th>
-                    <th class="dash-link">Date Sold</th>
+                    <th class="dash-link">Products</th>
+                    <th class="dash-link">Products Count</th>
+                    <th class="dash-link">Date Posted</th>
                     <th class="dash-link">Sales Worth</th>
                 </tr>
             </tbody>
-    
 
 
     </div>
 
     <script src="assets/js/main.js"></script>
-        <script src="assets/js/getSales.js"></script>
+    <script src="assets/js/userSales.js"></script>
+
 </body>
 
 </html>

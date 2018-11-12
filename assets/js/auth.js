@@ -41,8 +41,6 @@ async function login(event) {
                 output.innerHTML = data.message
             },1500)
         }
-
-        console.log(data.Authorization)
     } catch(error) {
         let output = document.getElementById('output')
         output.innerHTML = error
