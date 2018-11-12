@@ -31,46 +31,57 @@
             </div>
 
         </nav>
-            </div>
+    </div>
+
         <div class="container2">
             <div id="output">
-                <!-- Dialog Box -->
+        
             </div>
         </div>
-
 
     <div class="container-detail">
         <div class="card">
             <i class="fas fa-store fa-10x"></i>
         </div>
         <div class="form-update">
-            <h3>New Category</h3>
+            <h3>New Product</h3>
 
-            <form id="save">
-
-                <div class="form-field">
-                    <label id="lead_text" for="category"><span class="hidden">Category Name</span></label>
-                    <input id="category" type="text" class="form-input" placeholder="Create Category" required>
-                </div>
-
-                <div class="form-field">
-                    <input type="submit" value="Submit">
-                </div>
-            </form>
+                    <form class="form" id="post-product">
+                        <div class="form-field">
+                            <label id="lead_text" for="Title"><span class="hidden">Product Name</span></label>
+                            <input id="product_name" type="text" class="form-input" placeholder="Product Name" required>
+                        </div>
+                        <div class="form-field">
+                            <label id="lead_text" for="Minimum_stock"><span class="hidden">Stock Count</span></label>
+                            <input id="stock_count" type="number" class="form-input" placeholder="Stock Count" required>
+                        </div>
+                        <div class="form-field">
+                            <label id="lead_text" for="Minimum_stock"><span class="hidden">Minimum Stock</span></label>
+                            <input id="minimum_stock" type="number" class="form-input" placeholder="Minimum stock" required>
+                        </div>
+                    
+                        <div class="form-field">
+                            <label id="lead_text" for="Price"><span class="hidden">Price</span></label>
+                            <input id="price" type="number" class="form-input" placeholder="Price" required>
+                        </div>
+                        <div class="form-field">
+                            <label id="lead_text" for="category"><span class="hidden">Category</span></label>
+                                        <select id="btn" class="category_list">
+                                            
+                                        </select>
+                        </div>
+                    
+                        <div class="form-field">
+                            <input type="submit" value="Submit">
+                        </div>
+                    </form>
         </div>
 
     </div>
 
-
-
-
-
-
-
-
-
     <script src="assets/js/main.js"></script>
-    <script src="assets/js/newCategory.js"></script>
+    <script src="assets/js/postProducts.js"></script>
+
 </body>
 
 </html>
