@@ -24,7 +24,7 @@ function get_products() {
                             <td class="stock_data table-data">${body.products[i].inventory}</td>
                             <td class="Minimum_stock_data table-data">${body.products[i].min_quantity}</td>
                             <td class="Price_data table-data">Ksh.${body.products[i].price}</td>
-                            <td><button id="btn" onClick='fire(${body.products[i].product_id})'>Add to Cart</button></td>
+                            <td><button id="btn" onClick='fire(${body.products[i].product_id})'><i class="fas fa-shopping-cart">&nbsp&nbsp</i>Add to Cart</button></td>
                         </tr>
                     `)
 
