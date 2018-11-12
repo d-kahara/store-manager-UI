@@ -29,13 +29,15 @@
                 <a id="lead_text" href="staff_list.html">Back to Staff List</a>
             </div>
 
-            <div class="Navbar-Link">
-                <a id="lead_text" href="">Logout</a>
-            </div>
+
         </nav>
     </div>
 
-
+        <div class="container2">
+            <div id="output">
+                <!-- Dialog Box -->
+            </div>
+        </div>
 
     <div class="container-detail">
         <div class="card">
@@ -44,39 +46,33 @@
         <div class="form-update">
             <h3>New Attendant</h3>
 
-            <form action="" method="post" class="form">
+            <form id="save" class="form">
                 <div class="form-field">
-                    <label id="lead_text" for="Title"><span class="hidden">Attendant Name</span></label>
-                    <input id="Attendant_name" type="text" class="form-input" placeholder="Attendant Name" required>
+                    <label id="lead_text" for="Title"><span class="hidden">Attendant Email</span></label>
+                    <input id="Attendant_email" type="text" class="form-input" placeholder="Attendant Email" required>
                 </div>
 
                 <div class="form-field">
-                    <label id="lead_text" for="Department"><span class="hidden">Department</span></label>
-                    <input id="Department" type="text" class="form-input" placeholder="Department" required>
+                    <label id="lead_text" for="login-password"><span class="hidden">Password</span></label>
+                    <input autocomplete="off" id="login-password" type="password" class="form-input" placeholder="Password" required>
                 </div>
                 <div class="form-field">
-                    <label id="lead_text" for="is_admin"><span class="hidden">Grant Admin privileges</span></label>
-                    <input id="is_admin" type="text" class="form-input" placeholder="True" required>
+                    <label id="lead_text" for="is_admin">Assign Role</span></label>
+                    <select id="btn" class="role_list">
+                        <option>admin</option>
+                        <option>attendant</option>
+                    </select>
                 </div>
-
-
-                <div class="form-field">
-                    <input type="submit" value="Submit">
+                 <div class="form-field">
+                    <input  type="submit" value="Submit">
                 </div>
             </form>
         </div>
 
     </div>
 
+    <script src="assets/js/newUser.js"></script>
 
-
-
-
-
-
-
-
-    <script src="assets/js/main.js"></script>
 </body>
 
 </html>

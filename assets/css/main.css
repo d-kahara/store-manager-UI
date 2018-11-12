@@ -49,12 +49,23 @@ body {
 
 /* --------------Content-Area-Landing-Page------------------------- */
 .container {
-        display: flex;
-
+    display: flex;
 }
 .container div{
+    
     border: 1px #3DCCC7 solid;
     padding: 10px;
+    
+}
+.container2 div{
+    border: 1px  #3DCCC7 solid;
+    background-color:  #ED7D3A;
+    opacity: 0.5;
+    padding: 10px;
+    font-family: 'Kodchasan', sans-serif;
+    text-align: center;
+    font-weight: bold;
+
     
 }
 .box-1 {
@@ -62,14 +73,25 @@ body {
 }
 .box-2 {
     flex: 1;
-     display: flex;  
+    display: flex;  
     flex-direction: column;
 }
-#lead_text {
+
+#lead_text, #logout {
     color: #ED7D3A;
     font-family: 'Kodchasan', sans-serif;
-
+    cursor: pointer;
 }
+#quantity-att-prod {
+ max-width: 50%;
+ margin-left: 10px;
+}
+    
+
+ table {
+     font-family: 'Kodchasan', sans-serif;
+
+ }
 
 /* -------------Making Image Responsive --------------------------------*/
 
@@ -89,7 +111,7 @@ img {
 }
 
 /* ----------------Login Form-------------------------------------------- */
-input[type=text], input[type=password] {
+input[type=text], input[type=password], input[type=number]{
     width: 100%;
     padding: 12px 20px;
     margin: 8px 0;

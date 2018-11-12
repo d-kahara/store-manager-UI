@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU"
         crossorigin="anonymous">
     <link rel="stylesheet" href="assets/css/main.css">
-    <title>Cart </title>
+    <title>Sales-Attendant </title>
 </head>
 
 <body>
@@ -26,49 +26,45 @@
         <nav class="Navbar-Items Navbar-Items--right">
 
             <div class="Navbar-Link">
-                <a id="lead_text" href="attendant_products_view.html">Back To Products</a>
-            </div>
-            <div class="Navbar-Link">
-                <a id="lead_text" href="attendant_dash.html">Dashboard</a>
+                <a id="lead_text" href="admin_sale_records.html">Back to Sales</a>
             </div>
 
         </nav>
     </div>
-
-    <h3 id="lead_text" class="center">Cart</h3>
-
-    <div class="container-products">
-
-        <input id="input-box" type="text" name="search" placeholder="Search Cart..">
-
-
-    </div>
-
-
     <div class="container2">
         <div id="output">
             <!-- Dialog Box -->
         </div>
     </div>
+    <h3 id="lead_text" class="center">Sales Records for <p id="email"></p>
+    </h3>
+
+    <div class="container-products">
+
+        <input id="input-box" type="text" name="search" placeholder="Search records..">
+
+
+    </div>
+
+
+
 
     <div class="container-products">
         <table class="main-table">
-            <tbody id="carts">
+            <tbody id="sales">
                 <tr>
-                    <th class="dash-link">Item</th>
-                    <th class="dash-link">Quantity</th>
-                    <th class="dash-link">Price</th>
+                    <th class="dash-link">Products</th>
+                    <th class="dash-link">Products Count</th>
+                    <th class="dash-link">Date Posted</th>
+                    <th class="dash-link">Sales Worth</th>
                 </tr>
             </tbody>
 
-        </table>
-                </div>
 
-    <hr>
-    <button onclick="checkout()" id="btn-cart">Checkout</button>
+    </div>
 
     <script src="assets/js/main.js"></script>
-    <script src="assets/js/cart.js"></script>
+    <script src="assets/js/userSales.js"></script>
 
 </body>
 

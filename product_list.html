@@ -28,11 +28,13 @@
 				<a id="lead_text" href="admin_dash.html">Back to Dashboard</a>
 			</div>
 
-			<div class="Navbar-Link">
-				<a id="lead_text" href="index.html">Logout</a>
-			</div>
 		</nav>
 	</div>
+		<div class="container2">
+			<div id="output">
+		
+			</div>
+		</div>
 
 	<h3 id="lead_text" class="center">Inventory</h3>
 
@@ -41,46 +43,21 @@
 		<a href="new_category.html"><button class="add-product hidden" id="btn">Create Category</button></a>
 		<input id="input-box" type="text" name="search" placeholder="Search Products..">
 		
-		
 	</div>
-
-
-
-
 	<div class="container-products">
 				<table class="main-table">
-					<tr>
-						<th class="dash-link">Item</th>
-						<th class="dash-link">Stock</th>
-						<th class="dash-link">Minimum Stock</th>
-						<th class="dash-link">Price</th>
-				
-					</tr>
-					<tr>
-						<td class="item_data table-data">Flour</td>
-						<td class="stock_data table-data">54</td>
-						<td class="Minimum_stock_data table-data">10</td>
-						<td class="Price_data table-data">Ksh.75</td>
-						<td><a href="product_details.html"><button class="hidden" id="btn">View Details</button></a></td>
-				
-					<tr>
-						<td class="item_data table-data">Television</td>
-						<td class="stock_data table-data">12</td>
-						<td class="Minimum_stock_data table-data">5</td>
-						<td class="Price_data table-data">Ksh.17,500	</td>
-						<td><a href="product_details.html"><button class="hidden" id="btn">View Details</button></a></td>
-					</tr>
-					<tr>
-						<td class="item_data table-data">Blue Band</td>
-						<td class="stock_data table-data">54</td>
-						<td class="Minimum_stock_data table-data">10</td>
-						<td class="Price_data table-data">Ksh.45</td>
-						<td><button id="btn">View Details</button></td>
-					</tr>
+					<tbody id="products">
+						<tr>
+							<th class="dash-link">Product Name</th>
+							<th class="dash-link">Stock</th>
+							<th class="dash-link">Minimum Stock</th>
+							<th class="dash-link">Price</th>
+						</tr>
+					</tbody>
 				</table>
 	</div>
-	
-	<script src="assets/js/main.js"></script>
-</body>
 
+	<script src="assets/js/main.js"></script>
+	<script src="assets/js/getProducts.js"></script>
+</body>
 </html>
