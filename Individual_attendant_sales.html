@@ -28,13 +28,15 @@
             <div class="Navbar-Link">
                 <a id="lead_text" href="attendant_dash.html">Back to Dashboard</a>
             </div>
-            <div class="Navbar-Link">
-                <a id="lead_text" href="">Logout</a>
-            </div>
+
         </nav>
     </div>
-
-    <h3 id="lead_text" class="center">Sales Records for Prince</h3>
+        <div class="container2">
+            <div id="output">
+                <!-- Dialog Box -->
+            </div>
+        </div>
+    <h3 id="lead_text" class="center">Sale Records for <p id="email"></p></h3>
 
     <div class="container-products">
 
@@ -48,35 +50,22 @@
 
     <div class="container-products">
         <table class="main-table">
-            <tr>
-                <th class="dash-link">Attendant Name</th>
-                <th class="dash-link">Products Sold</th>
-                <th class="dash-link">Date Sold</th>
-                <th class="dash-link">Sales Worth</th>
+            <tbody id="sales">
+                <tr>
+                    <th class="dash-link">Products</th>
+                    <th class="dash-link">Products Count</th>
+                    <th class="dash-link">Date Posted</th>
+                    <th class="dash-link">Sales Worth</th>                
+                </tr>
+    
+            </tbody>
 
-            </tr>
-            <tr>
-                <td class="item_data table-data">Prince</td>
-                <td class="stock_data table-data">12</td>
-                <td class="Minimum_stock_data table-data">1-Oct-2018</td>
-                <td class="Price_data table-data">Ksh.75,025</td>
-            </tr>
 
-            <tr>
-                <td class="item_data table-data">Prince</td>
-                <td class="stock_data table-data">3</td>
-                <td class="Minimum_stock_data table-data">4-Oct-2018</td>
-                <td class="Price_data table-data">Ksh.7,245</td>
-            </tr>
-            <tr>
-                <td class="item_data table-data">Prince</td>
-                <td class="stock_data table-data">50</td>
-                <td class="Minimum_stock_data table-data">8-Oct-2018</td>
-                <td class="Price_data table-data">Ksh.175,025</td>
-            </tr>
     </div>
 
     <script src="assets/js/main.js"></script>
+    <script src="assets/js/att_sales.js"></script>
+
 </body>
 
 </html>

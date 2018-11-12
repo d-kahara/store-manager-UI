@@ -28,59 +28,43 @@
             <div class="Navbar-Link">
                 <a id="lead_text" href="attendant_dash.html">Back To Dashboard</a>
             </div>
-            <div class="Navbar-Link">
-                <a id="lead_text" href="index.html">Logout</a>
-            </div>
+
         </nav>
     </div>
+        <div class="container2">
+            <div id="output">
+                <!-- Dialog Box -->
+            </div>
+        </div>
 
     <h3 id="lead_text" class="center">Inventory</h3>
 
     <div class="container-products">
-
         <input id="input-box" type="text" name="search" placeholder="Search Products..">
-
-
     </div>
-
-
-
-
     <div class="container-products">
         <table class="main-table">
+        <tbody id="products">
             <tr>
-                <th class="dash-link">Item</th>
+                <th class="dash-link">Product Name</th>
                 <th class="dash-link">Stock</th>
                 <th class="dash-link">Minimum Stock</th>
                 <th class="dash-link">Price</th>
-
             </tr>
-            <tr>
-                <td class="item_data table-data">Flour</td>
-                <td class="stock_data table-data">54</td>
-                <td class="Minimum_stock_data table-data">10</td>
-                <td class="Price_data table-data">Ksh.75</td>
-                <td><a href="cart.html"><button class="hidden" id="btn"><i class="fas fa-shopping-cart">&nbsp &nbsp</i>Add to Cart</button></td>
-</a>
-            <tr>
-                <td class="item_data table-data">Television</td>
-                <td class="stock_data table-data">12</td>
-                <td class="Minimum_stock_data table-data">5</td>
-                <td class="Price_data table-data">Ksh.17,500 </td>
-                <td><a href="cart.html"><button class="hidden" id="btn"><i class="fas fa-shopping-cart">&nbsp &nbsp</i>Add to Cart</button></td>
-</a>            </tr>
-            <tr>
-                <td class="item_data table-data">Blue Band</td>
-                <td class="stock_data table-data">54</td>
-                <td class="Minimum_stock_data table-data">10</td>
-                <td class="Price_data table-data">Ksh.45</td>
-            
+            <form id='form1'>
+                <tr>
+                    <td><input id="quantity" type="number" class="form-input" placeholder="quantity" required></td>
+                </tr>
+            </form>
 
-                <td><a href="cart.html"><button class="hidden" id="btn"><i class="fas fa-shopping-cart">&nbsp &nbsp</i>Add to Cart</button></td>
-</a>            </tr>
+        </tbody>
+ 
+        </table>
     </div>
+    
 
-    <script src="assets/js/main.js"></script>
+    <script src="assets/js/getAttProducts.js"></script>
+
 </body>
 
 </html>
