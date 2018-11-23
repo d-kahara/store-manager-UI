@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css?family=Armata" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Kodchasan" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU"
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="../assets/css/main.css">
+    <title>Product Details</title>
+</head>
+
+<body>
+    <div class="Navbar">
+        <div id="lead_text" class="Navbar-Link Navbar-Link-brand">
+            Store Manager
+        </div>
+
+        <div class="Navbar-Link Navbar-Link-toggle">
+            <i class="fas fa-bars"></i>
+        </div>
+
+        <nav class="Navbar-Items Navbar-Items--right">
+
+            <div class="Navbar-Link">
+                <a id="lead_text" href="product_list.html">Back to Products</a>
+            </div>
+
+        </nav>
+    </div>
+    <div class="container2">
+        <div id="output">
+            <!-- Dialog Box -->
+        </div>
+    </div>
+    <div class="container-detail">
+        <div class="card">
+            <h5>Product Title</h5>
+            <p id="card-title">Flour</p>
+            <h5>In Stock</h5>
+            <p id="stock">50</p>
+            <h5>Minimum Quantity Allowed</h5>
+            <p id="minimum-quantity">20</p>
+            <h5>Date Added</h5>
+            <p id="date-added">11-Oct-2018</p>
+            <h5>Date Modified</h5>
+            <p id="date-modified">13-Oct-2018</p>
+            <h5>Price</h5>
+            <p id="price">Ksh.75</p>
+
+            <Button id="delete">Delete</Button>
+        
+        </div>
+        <div class="form-update">
+            <h3>Update Details</h3>
+            <form action="" method="post" id="product-update">
+                <div class="form-field">
+                    <label id="lead_text" for="stock"><span class="hidden"> Stock</span></label>
+                    <input id="stock_form" type="number" class="form-input" placeholder=" stock" >
+                </div>
+            
+                <div class="form-field">
+                    <label id="lead_text" for="Minimum_stock"><span class="hidden">Minimum Stock</span></label>
+                    <input id="minimum_stock" type="number" class="form-input" placeholder="Minimum stock" >
+                </div>
+
+                <div class="form-field">
+                    <label id="lead_text" for="Price"><span class="hidden">Price</span></label>
+                    <input id="price_form" type="number" class="form-input" placeholder="Price" >
+                </div>
+
+            
+                <div class="form-field">
+                    <input type="submit" value="Submit">
+                </div>
+            </form>
+        </div>
+
+    </div>
+
+    <script src="../dist/singleProduct.bundle.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css?family=Armata" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Kodchasan" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU"
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="/public/assets/css/main.css">
+    <title>Staff Details</title>
+</head>
+
+<body>
+    <div class="Navbar">
+        <div id="lead_text" class="Navbar-Link Navbar-Link-brand">
+            Store Manager
+        </div>
+
+        <div class="Navbar-Link Navbar-Link-toggle">
+            <i class="fas fa-bars"></i>
+        </div>
+
+        <nav class="Navbar-Items Navbar-Items--right">
+
+            <div class="Navbar-Link">
+                <a id="lead_text" href="staff_list.html">Back to Staff List</a>
+            </div>
+
+
+        </nav>
+    </div>
+
+        <div class="container2">
+            <div id="output">
+                <!-- Dialog Box -->
+            </div>
+        </div>
+
+    <div class="container-detail">
+        <div class="card">
+            <i class="fas fa-user fa-10x"></i>
+        </div>
+        <div class="form-update">
+            <h3>New Attendant</h3>
+
+            <form id="save" class="form">
+                <div class="form-field">
+                    <label id="lead_text" for="Title"><span class="hidden">Attendant Email</span></label>
+                    <input id="Attendant_email" type="text" class="form-input" placeholder="Attendant Email" required>
+                </div>
+
+                <div class="form-field">
+                    <label id="lead_text" for="login-password"><span class="hidden">Password</span></label>
+                    <input autocomplete="off" id="login-password" type="password" class="form-input" placeholder="Password" required>
+                </div>
+                <div class="form-field">
+                    <label id="lead_text" for="is_admin">Assign Role</span></label>
+                    <select id="btn" class="role_list">
+                        <option>admin</option>
+                        <option>attendant</option>
+                    </select>
+                </div>
+                 <div class="form-field">
+                    <input  type="submit" value="Submit">
+                </div>
+            </form>
+        </div>
+
+    </div>
+
+    <script src="/public/dist/newStaff.bundle.js"></script>
+
+</body>
+
+</html>

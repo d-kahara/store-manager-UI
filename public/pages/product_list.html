@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<link href="https://fonts.googleapis.com/css?family=Armata" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Kodchasan" rel="stylesheet">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU"
+	 crossorigin="anonymous">
+	<link rel="stylesheet" href="../assets/css/main.css">
+	<title>Inventory	</title>
+</head>
+
+<body>
+	<div class="Navbar">
+		<div id="lead_text" class="Navbar-Link Navbar-Link-brand">
+			Store Manager
+		</div>
+
+		<div class="Navbar-Link Navbar-Link-toggle">
+			<i class="fas fa-bars"></i>
+		</div>
+
+		<nav class="Navbar-Items Navbar-Items--right">
+			<div class="Navbar-Link">
+				<a id="lead_text" href="admin_dash.html">Back to Dashboard</a>
+			</div>
+
+		</nav>
+	</div>
+		<div class="container2">
+			<div id="output">
+		
+			</div>
+		</div>
+
+	<h3 id="lead_text" class="center">Inventory</h3>
+
+	<div class="container-products">
+		<a href="new_product.html"><button class="add-product hidden" id="btn">Add Product</button></a>
+		<a href="new_category.html"><button class="add-product hidden" id="btn">Create Category</button></a>
+		<input id="input-box" type="text" name="search" placeholder="Search Products..">
+		
+	</div>
+	<div class="container-products">
+				<table class="main-table">
+					<tbody id="products">
+						<tr>
+							<th class="dash-link">Product Name</th>
+							<th class="dash-link">Stock</th>
+							<th class="dash-link">Minimum Stock</th>
+							<th class="dash-link">Price</th>
+						</tr>
+					</tbody>
+				</table>
+	</div>
+	<script src="../dist/getProducts.bundle.js"></script>
+</body>
+</html>
